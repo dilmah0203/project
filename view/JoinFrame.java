@@ -18,7 +18,7 @@ public class JoinFrame extends JFrame {
 	
 	JoinFrame(int num) {
 		join_num=num;
-		Font font1 = new Font("맑은 고딕", Font.BOLD, 13); //폰트 추가
+		Font font1 = new Font("맑은 고딕", Font.BOLD, 13); 
 		Font font2 = new Font("맑은 고딕", Font.BOLD, 15);
 
 		img = new ImageIcon("Image/JoinFrame.png"); //JoinFrame 배경 설정

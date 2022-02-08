@@ -17,7 +17,7 @@ public class AdminJoinFrame extends JFrame {
 	static int loginCnt;
 	
 	AdminJoinFrame() {
-		Font font1 = new Font("맑은 고딕", Font.BOLD, 13); // 폰트 추가
+		Font font1 = new Font("맑은 고딕", Font.BOLD, 13); 
 		Font font2 = new Font("맑은 고딕", Font.BOLD, 15);
 
 		img = new ImageIcon("Image/AdminJoinFrame.png");
@@ -35,7 +35,7 @@ public class AdminJoinFrame extends JFrame {
 		panel.setLayout(null);
 		setLocationRelativeTo(null);
 
-		JLabel join_label = new JLabel("ADMINJOIN"); // 텍스트 사용을 위해 JLabel 변수 선언
+		JLabel join_label = new JLabel("ADMINJOIN"); 
 		JLabel name_label = new JLabel("성         명  :");
 		JLabel id_label = new JLabel("아   이   디  :");
 		JLabel pwd_label = new JLabel("비 밀 번 호  : ");
@@ -50,20 +50,20 @@ public class AdminJoinFrame extends JFrame {
 		id_label.setFont(font1);
 		pwd_label.setFont(font1);
 		checkpwd_label.setFont(font1);
-		join_label.setForeground(Color.WHITE); // 폰트의 색상 적용
+		join_label.setForeground(Color.WHITE); 
 		name_label.setForeground(Color.WHITE);
 		id_label.setForeground(Color.WHITE);
 		pwd_label.setForeground(Color.WHITE);
 		checkpwd_label.setForeground(Color.WHITE);
-		panel.add(join_label); // 패널에 라벨 적용
+		panel.add(join_label); 
 		panel.add(name_label);
 		panel.add(id_label);
 		panel.add(pwd_label);
 		panel.add(checkpwd_label);
 
-		JTextField name_field = new JTextField(); // 타이핑한 글씨가 보이는 JTextField
+		JTextField name_field = new JTextField(); 
 		JTextField id_field = new JTextField();
-		JPasswordField pwd_field = new JPasswordField(); // 타이핑한 글씨가 보이지 않는 JPasswordField
+		JPasswordField pwd_field = new JPasswordField(); 
 		JPasswordField checkpwd_field = new JPasswordField();
 		name_field.setBounds(115, 85, 180, 25);
 		id_field.setBounds(115, 155, 180, 25);

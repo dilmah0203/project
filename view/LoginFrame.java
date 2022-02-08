@@ -15,7 +15,7 @@ public class LoginFrame extends JFrame {
 	ImageIcon img;
 	DTO dto = new DTO();
 	DAO dao = new DAO();
-	static JTextField id_field = new JTextField(); // 타이핑한 글씨가 보이는 JTextField
+	static JTextField id_field = new JTextField(); 
 	
 	public static int getLoginNum(int num) {
 		if(login_num==num)
@@ -24,7 +24,7 @@ public class LoginFrame extends JFrame {
 	}
 	
 	LoginFrame(int num) {
-		Font font1 = new Font("맑은 고딕", Font.BOLD, 13); // 폰트 추가
+		Font font1 = new Font("맑은 고딕", Font.BOLD, 13); 
 		Font font2 = new Font("맑은 고딕", Font.BOLD, 15);
 
 		img = new ImageIcon("Image/LoginFrame.png");
@@ -42,7 +42,7 @@ public class LoginFrame extends JFrame {
 		panel.setLayout(null);
 		setLocationRelativeTo(null);
 
-		JLabel login_label = new JLabel("LOGIN"); // 텍스트 사용을 위해 JLabel 변수 선언
+		JLabel login_label = new JLabel("LOGIN"); 
 		JLabel id_label = new JLabel("아   이   디  :");
 		JLabel pwd_label = new JLabel("비 밀 번 호  : ");
 		login_label.setBounds(175, 5, 100, 45);
@@ -51,10 +51,10 @@ public class LoginFrame extends JFrame {
 		login_label.setFont(font2); // 폰트 적용
 		id_label.setFont(font1);
 		pwd_label.setFont(font1);
-		login_label.setForeground(Color.BLACK); // 폰트의 색상 적용
+		login_label.setForeground(Color.BLACK); 
 		id_label.setForeground(Color.BLACK);
 		pwd_label.setForeground(Color.BLACK);
-		panel.add(login_label); // 패널에 라벨 적용
+		panel.add(login_label); 
 		panel.add(id_label);
 		panel.add(pwd_label);
 
